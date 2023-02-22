@@ -1,0 +1,102 @@
+//{
+//    "defaultSeverity": "error",
+//    "extends": [
+//        "tslint:recommended"
+//    ],
+//    "jsRules": {},
+//    "rules": {},
+//    "rulesDirectory": []
+//}
+
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended",
+        "tslint-eslint-rules"
+    ],
+    "jsRules": {},
+    "rules": {
+        "one-variable-per-declaration": false,
+        "no-console": [false, "log", "error"],
+        "only-arrow-functions": true,
+        "array-type": false,
+        "no-trailing-whitespace": true,
+        "class-name": true,
+        "no-empty-interface": true,
+        "typedef": [
+            true,
+            "call-signature",
+            "parameter",
+            "arrow-parameter",
+            "property-declaration",
+            "member-variable-declaration",
+            "object-destructuring",
+            "array-destructuring"
+        ],
+        "curly": [true, "as-needed"],
+        "function-constructor": true,
+        "no-arg": true,
+        "no-async-without-await": true,
+        "no-bitwise": true,
+        "no-conditional-assignment": true,
+        "no-duplicate-switch-case": true,
+        "no-duplicate-variable": true,
+        "no-empty": true,
+        "no-eval": true,
+        "no-return-await": true,
+        "no-shadowed-variable": true,
+        "no-string-literal": true,
+        "no-tautology-expression": true,
+        "no-var-keyword": true,
+        "no-unused-expression": true,
+        "switch-default": true,
+        "use-isnan": true,
+        "invalid-void": true,
+        "no-require-imports": false,
+        "file-name-casing": [false, {
+            ".ts": "camel-case"
+        }],
+        "switch-final-break": true,
+        "unnecessary-else": [true, {"allow-else-if": true}],
+        "variable-name": [
+            false,
+            "allow-pascal-case",
+            "require-const-for-all-caps",
+            "allow-leading-underscore"
+        ],
+        "align": [true, "parameters", "statements"],
+        "import-spacing": true,
+        "indent": [true, "spaces", 4],
+        "semicolon": [true, "always"],
+        "trailing-comma": [
+            true, {
+                "multiline": {
+                    "objects": "never",
+                    "arrays": "never",
+                    "functions": "never",
+                    "typeLiterals": "never"
+                },
+                "singleline": {
+                    "objects": "never",
+                    "arrays": "never",
+                    "functions": "never",
+                    "typeLiterals": "never"
+                },
+                "esSpecCompliant": true
+            }
+        ],
+        "object-curly-spacing": [true, "always"],
+        "whitespace": [
+            true,
+            "check-branch",
+            "check-decl",
+            "check-operator",
+            "check-separator",
+            "check-type"
+        ],
+        "no-var-requires": false
+    },
+    "rulesDirectory": [
+        "node_modules/tslint-eslint-rules/dist/rules"
+    ]
+}
